@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <link rel="stylesheet" href="css/style.css">
+  <title>My Website</title>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <nav class="navigation">
+    <img src="assets/logo.png" class="logo">
+    <div class="home"><a>Home</a></div>
+    <div class="our_profile"><a>Our Profile</a></div>
+    <div class="achievement"><a>Achievement</a></div>
+    <div class="message_us"><a>Message Us</a></div>
+  </nav>
+  <hr>
+
+  <h1 class="title">
+    Hi Dimas, welcome to the website
+  </h1>
+  <p class="subtitle">This is our first practice website</p>
+  <img src="assets/perpus.png" class="picture">
+  <hr>
+
+  <h1 class="title">Our Facilities</h1>
+  <div class="image_container">
+    <div class="teacher">
+      <img src="assets/teacher.png" class="facility_pic">
+      <p>Professional Teacher</p>
+    </div>
+    <div class="sport field">
+      <img src="assets/stadionui.png" class="facility_pic">
+      <p>Sports Field</p>
+    </div>
+    <div class="classroom">
+      <img src="assets/classFTUI.PNG" class="facility_pic">
+      <p>Classroom</p>
+    </div>
+  </div>
+
+  <hr>
+    <h1 class="title"> Message Us </h1>
+<div class="form_container">
+    <div class="form">
+    <form class="message-form" name="message-form" onsubmit="return validateform()">
+      <div id="yourname">
+          <label for="inputname">Your Name :</label>
+          <input
+              id="inputname"
+              type="text"
+              name="valid-name"
+          >
+      </div>
+      <div id="datesaja">
+          <label for="inputemail">Enter Date :</label>
+          <input type="date" id="yourdate">        
+      </div>
+      
+      <div id="gender"> 
+        <label for="gender">Jenis Kelamin: </label>
+        <input type="radio" id="Male" name="gender" value="Male">
+        <label for = "Male">Male</label>
+
+        <input type="radio" value="Female" name="gender">
+        <label for = "Female">Female</label>
+
+        <input type="radio" value="Non-Binary" name="gender">
+        <label for = "non_binary">Non-Binary</label>
+      </div>
+
+      <div>
+      <label for="comment">Pesan   :</label> <br>
+      <textarea rows="4" cols="50" name="comment" form="usrform" id="comment_form"></textarea>
+      </div>
+    </form>
+        <button id="send">SEND</button>
+    </div>
+
+    <div>
+        <p id="output"></p>
+    </div>
+</div> 
+ 
+
+  <hr>
+<h4 class="footer">
+  created by Dimas</h4>
+</body>
+</html>
